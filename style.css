@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Core Structural Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,130 +7,153 @@
 }
 
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #0d131a; /* Premium Dark Midnight Blue */
+    color: #e2e8f0; /* Crisp Off-White text */
     line-height: 1.6;
+    padding-bottom: 40px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
+.portfolio-container {
+    width: 85%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-/* Header */
-header {
-    background-color: #1a1a1a;
-    border-bottom: 3px solid #990000; /* Crimson Border */
-    padding: 40px 0;
+/* Header Styling */
+.portfolio-header {
+    background-color: #131c26; /* Deep Navy Card Base */
+    border-bottom: 3px solid #d4af37; /* Premium Metallic Gold Border */
+    padding: 50px 0;
     text-align: center;
-}
-
-header h1 {
-    color: #ff3333; /* Crimson Accent */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #aaaaaa;
-    font-size: 1.2rem;
-}
-
-/* Layout Grid */
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* Sidebar Skills */
-.skills-sidebar {
-    background-color: #1a1a1a;
+.portfolio-header h1 {
+    color: #ffd700; /* Vibrant Gold Accent Title */
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.portfolio-header .subtitle {
+    color: #94a3b8; /* Muted slate blue description text */
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+/* Section Layouts */
+.portfolio-section {
+    margin-bottom: 45px;
+}
+
+.section-title {
+    color: #ffd700; /* Gold Section Headers */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Cards & Content Panels */
+.section-card {
+    background-color: #131c26;
     padding: 25px;
-    border-radius: 8px;
-    border-left: 4px solid #990000;
-    height: fit-content;
+    border-radius: 6px;
+    border-left: 4px solid #d4af37; /* Gold Left accent line */
 }
 
-.skills-sidebar h2 {
-    color: #ff3333;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.skills-sidebar h3 {
-    color: #ffffff;
-    margin: 15px 0 5px 0;
-}
-
-.skills-sidebar ul {
-    list-style: none;
-    padding-left: 5px;
-}
-
-.skills-sidebar ul li {
-    margin-bottom: 8px;
-    color: #cccccc;
-    font-size: 0.95rem;
-}
-
-.skills-sidebar ul li::before {
-    content: "▪ ";
-    color: #ff3333;
-}
-
-/* Experience Cards */
-.experience-timeline h2 {
-    color: #ff3333;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
-
-.job-card {
-    background-color: #1a1a1a;
+.competency-card {
+    background-color: #131c26;
     padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: transform 0.2s;
+    border-radius: 6px;
+    border-left: 4px solid #d4af37;
 }
 
-.job-card:hover {
-    transform: translateY(-3px);
-    border: 1px solid #550000;
-}
-
-.job-card h3 {
+.competency-card h3 {
     color: #ffffff;
+    font-size: 1.15rem;
     margin-bottom: 15px;
 }
 
-.job-card ul {
+.competency-card ul {
+    list-style: none;
+}
+
+.competency-card ul li {
+    margin-bottom: 10px;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.competency-card ul li::before {
+    content: "▪ ";
+    color: #ffd700; /* Gold indicator dots */
+    padding-right: 5px;
+}
+
+/* Experience Cards */
+.experience-card {
+    background-color: #131c26;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border-left: 4px solid #d4af37;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.card-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.card-header h3 {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 20px 25px;
+}
+
+.card-body ul {
     padding-left: 20px;
 }
 
-.job-card ul li {
-    margin-bottom: 10px;
-    color: #cccccc;
+.card-body ul li {
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    font-size: 0.95rem;
 }
 
-/* Footer */
-footer {
+/* Footer Section */
+.portfolio-footer {
     text-align: center;
-    padding: 20px;
-    background-color: #1a1a1a;
-    color: #777777;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
+    padding: 30px;
+    margin-top: 60px;
+    background-color: #131c26;
+    color: #64748b;
+    font-size: 0.85rem;
+    border-top: 1px solid #1e293b;
 }
 
-/* Mobile Responsiveness */
+/* Mobile Alignment Modifications */
 @media (max-width: 768px) {
-    .main-content {
+    .portfolio-container {
+        width: 90%;
+    }
+    .grid-two-columns {
         grid-template-columns: 1fr;
+    }
+    .portfolio-header h1 {
+        font-size: 2rem;
     }
 }
