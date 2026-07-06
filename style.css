@@ -1,4 +1,4 @@
-/* Core Structural Reset matching Praveen's layout spacing */
+/* Core Structural Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #0d131a; /* Premium Midnight Blue */
+    background-color: #0d131a; /* Dark Midnight Blue Background */
     color: #e2e8f0;
     line-height: 1.6;
     padding-bottom: 40px;
@@ -19,17 +19,17 @@ body {
     margin: 0 auto;
 }
 
-/* Header Container */
+/* Header Styling */
 .portfolio-header {
     background-color: #131c26; /* Deep Navy Card Base */
-    border-bottom: 3px solid #d4af37; /* Premium Gold Finish Line */
+    border-bottom: 3px solid #d4af37; /* Gold Border Finish */
     padding: 50px 0;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .portfolio-header h1 {
-    color: #ffd700; /* Brushed Gold Title */
+    color: #ffd700; /* Gold Header Text */
     font-size: 2.6rem;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -42,13 +42,13 @@ body {
     font-weight: 400;
 }
 
-/* Section Structural Formatting */
+/* Section Layouts */
 .portfolio-section {
     margin-bottom: 45px;
 }
 
 .section-title {
-    color: #ffd700; /* Gold Headers */
+    color: #ffd700; /* Gold Section Header Text */
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 18px;
@@ -58,7 +58,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Cards & Grid Containers */
+/* Cards & Grid Framework */
 .section-card {
     background-color: #131c26;
     padding: 25px;
@@ -134,7 +134,27 @@ body {
     font-size: 0.95rem;
 }
 
-/* Footer Container */
+/* Contact Styles */
+.contact-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.contact-list li {
+    color: #cbd5e1;
+}
+
+.contact-list a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
 .portfolio-footer {
     text-align: center;
     padding: 30px;
@@ -145,7 +165,7 @@ body {
     border-top: 1px solid #1e293b;
 }
 
-/* Responsive Scaling for Mobile Screens */
+/* Mobile Alignment Modifications */
 @media (max-width: 768px) {
     .portfolio-container {
         width: 90%;
