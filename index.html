@@ -3,85 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Engineering Portfolio</title>
+    <title>Thamizhmani Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Network Engineer Portfolio</h1>
-            <p>Specialist in OLT Operations, Routing & Network Migrations</p>
+    <header class="portfolio-header">
+        <div class="header-container">
+            <h1>Thamizhmani Portfolio</h1>
+            <p class="subtitle">Specialist in OLT Operations, Routing & Network Migrations</p>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <div class="container main-content">
+    <!-- Main Content Layout -->
+    <main class="portfolio-container">
         
-        <!-- Left Column: Technical Skills -->
-        <aside class="skills-sidebar">
-            <h2>Technical Skills</h2>
+        <!-- Objective Section -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="section-card">
+                <p>Result-oriented Network Engineer specializing in optical infrastructure operations, configuration management, and high-availability access networks. Proven expertise in end-to-end OLT deployment, ring expansions, and service provisioning across multi-vendor carrier environments.</p>
+            </div>
+        </section>
+
+        <!-- Technical Competencies Section -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Technical Competencies</h2>
+            <div class="grid-two-columns">
+                <div class="competency-card">
+                    <h3>Core Networking & Hardware</h3>
+                    <ul>
+                        <li>OLT Installation & Lifecycle Management</li>
+                        <li>GPON / Fiber Access Infrastructure</li>
+                        <li>Static & Dynamic Routing Protocols</li>
+                        <li>VLAN Mapping & Segmentations</li>
+                        <li>Juniper & Nokia Hardware Ecosystems</li>
+                    </ul>
+                </div>
+                <div class="competency-card">
+                    <h3>Operations & Resiliency</h3>
+                    <ul>
+                        <li>Ring Node to LAG Node Migrations</li>
+                        <li>Carrier-Grade Troubleshooting (CLI / GUI)</li>
+                        <li>Advanced Port & Switch Provisioning</li>
+                        <li>PON Protection Architecture</li>
+                        <li>Network Optimization & Service Restorations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Professional Projects & Experience</h2>
             
-            <h3>Networking</h3>
-            <ul>
-                <li>OLT Installation & Configuration</li>
-                <li>GPON / Fiber Access Networks</li>
-                <li>Static & Dynamic Routing</li>
-                <li>VLAN Configuration</li>
-                <li>PON Protection</li>
-                <li>Network Migration Activities</li>
-            </ul>
+            <div class="experience-card">
+                <div class="card-header">
+                    <h3>Optical Line Terminal (OLT) Operations</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Managed comprehensive OLT infrastructure deployments, installations, and complex service provisioning activities.</li>
+                        <li>Executed streamlined customer onboarding protocols via dedicated provider OLT management utilities.</li>
+                        <li>Configured and verified optimal routing pathways to stabilize high-capacity link configurations.</li>
+                        <li>Conducted end-to-end system testing and performance validation to resolve subscriber issues efficiently.</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h3>Operations</h3>
-            <ul>
-                <li>Service Provisioning</li>
-                <li>Network Troubleshooting</li>
-                <li>Router Switching</li>
-                <li>Network Monitoring</li>
-                <li>Infrastructure Maintenance</li>
-            </ul>
-        </aside>
+            <div class="experience-card">
+                <div class="card-header">
+                    <h3>VLAN, Switching & Port Management</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Configured secure, scalable VLAN assignments mapped closely to enterprise subscriber standards.</li>
+                        <li>Provisioned high-performance interface switches on production Nokia and Juniper carrier assets.</li>
+                        <li>Navigated combined CLI and GUI workflows to manage real-time circuit parameters under strict SLA windows.</li>
+                    </ul>
+                </div>
+            </div>
 
-        <!-- Right Column: Professional Experience -->
-        <main class="experience-timeline">
-            <h2>Professional Experience</h2>
+            <div class="experience-card">
+                <div class="card-header">
+                    <h3>Infrastructure Migration & Resiliency</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Migrated vulnerable Ring Nodes over to high-availability LAG (Link Aggregation Group) configurations to eliminate single points of failure.</li>
+                        <li>Coordinated scheduled maintenance windows for router link switching with nominal subscriber impact.</li>
+                        <li>Contributed to multi-site link expansion plans aimed at futureproofing local fiber access capacity.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <section class="job-card">
-                <h3>Optical Line Terminal (OLT) Operations</h3>
-                <ul>
-                    <li>Managed end-to-end OLT infrastructure deployment, lifecycle management, installation, and service provisioning activities.</li>
-                    <li>Executed seamless customer onboarding and network activation processes through dedicated OLT management platforms.</li>
-                    <li>Configured, verified, and optimized both Static Routing and Dynamic Routing protocols to ensure stable customer network connectivity.</li>
-                    <li>Conducted comprehensive advanced troubleshooting and structural validation of network services to achieve peak customer performance.</li>
-                </ul>
-            </section>
-
-            <section class="job-card">
-                <h3>VLAN & Switch Configuration</h3>
-                <ul>
-                    <li>Configured and maintained scalable VLAN assignments mapped to diverse customer enterprise services.</li>
-                    <li>Provisioned and managed high-performance switch port configurations on industry-leading Juniper and Nokia network hardware.</li>
-                    <li>Executed complex network configurations efficiently across both Command Line Interface (CLI) and Graphical User Interface (GUI) operational environments.</li>
-                    <li>Assisted with critical network provisioning, dynamic service modifications, and hardware-level connectivity troubleshooting.</li>
-                </ul>
-            </section>
-
-            <section class="job-card">
-                <h3>Network Migration & Infrastructure</h3>
-                <ul>
-                    <li>Successfully performed Ring Node to LAG (Link Aggregation Group) Node migration activities to significantly enhance core network resiliency and performance.</li>
-                    <li>Participated in complex edge router switching and infrastructure migration operations under tight windows with minimal service impact.</li>
-                    <li>Supported continuous network optimization, architecture upgrades, and capacity enhancement projects across the access network infrastructure.</li>
-                </ul>
-            </section>
-        </main>
-
-    </div>
+    </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Network Engineering Portfolio. All Rights Reserved.</p>
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 Thamizhmani Portfolio. All Rights Reserved.</p>
     </footer>
 
 </body>
