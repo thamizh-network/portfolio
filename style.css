@@ -1,4 +1,4 @@
-/* Core Structural Reset */
+/* Core Structural Reset matching Praveen's layout spacing */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #0d131a; /* Premium Dark Midnight Blue */
-    color: #e2e8f0; /* Crisp Off-White text */
+    background-color: #0d131a; /* Premium Midnight Blue */
+    color: #e2e8f0;
     line-height: 1.6;
     padding-bottom: 40px;
 }
@@ -19,17 +19,17 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styling */
+/* Header Container */
 .portfolio-header {
     background-color: #131c26; /* Deep Navy Card Base */
-    border-bottom: 3px solid #d4af37; /* Premium Metallic Gold Border */
+    border-bottom: 3px solid #d4af37; /* Premium Gold Finish Line */
     padding: 50px 0;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .portfolio-header h1 {
-    color: #ffd700; /* Vibrant Gold Accent Title */
+    color: #ffd700; /* Brushed Gold Title */
     font-size: 2.6rem;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -37,18 +37,18 @@ body {
 }
 
 .portfolio-header .subtitle {
-    color: #94a3b8; /* Muted slate blue description text */
+    color: #94a3b8;
     font-size: 1.15rem;
     font-weight: 400;
 }
 
-/* Section Layouts */
+/* Section Structural Formatting */
 .portfolio-section {
     margin-bottom: 45px;
 }
 
 .section-title {
-    color: #ffd700; /* Gold Section Headers */
+    color: #ffd700; /* Gold Headers */
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 18px;
@@ -58,12 +58,12 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Cards & Content Panels */
+/* Cards & Grid Containers */
 .section-card {
     background-color: #131c26;
     padding: 25px;
     border-radius: 6px;
-    border-left: 4px solid #d4af37; /* Gold Left accent line */
+    border-left: 4px solid #d4af37;
 }
 
 .grid-two-columns {
@@ -97,11 +97,11 @@ body {
 
 .competency-card ul li::before {
     content: "▪ ";
-    color: #ffd700; /* Gold indicator dots */
+    color: #ffd700; /* Gold Bullet Finish */
     padding-right: 5px;
 }
 
-/* Experience Cards */
+/* Experience Layout Blocks */
 .experience-card {
     background-color: #131c26;
     border-radius: 6px;
@@ -134,7 +134,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* Footer Section */
+/* Footer Container */
 .portfolio-footer {
     text-align: center;
     padding: 30px;
@@ -145,7 +145,7 @@ body {
     border-top: 1px solid #1e293b;
 }
 
-/* Mobile Alignment Modifications */
+/* Responsive Scaling for Mobile Screens */
 @media (max-width: 768px) {
     .portfolio-container {
         width: 90%;
