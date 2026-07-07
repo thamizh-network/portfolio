@@ -40,7 +40,7 @@ body {
     font-weight: 700;
 }
 .navbar .logo a span {
-    color: #00bcd4; /* Accent cyan color */
+    color: #00bcd4;
 }
 .navbar .menu li {
     list-style: none;
@@ -177,14 +177,14 @@ section .title::after {
 /* Skills Grid Styling */
 .skills .skills-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 .skills .skills-content .card {
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 30px 20px;
+    padding: 40px 25px;
     transition: all 0.3s ease;
     border: 1px solid #333;
 }
@@ -201,9 +201,16 @@ section .title::after {
     color: #fff;
 }
 .skills .skills-content .card .text {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 15px 0 10px 0;
+}
+.skills .skills-content .card p {
+    line-height: 1.6;
+    color: #ccc;
+}
+.skills .skills-content .card:hover p {
+    color: #fff;
 }
 
 /* Contact Section Styling */
