@@ -3,53 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Thamizhmani | Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- jQuery (Needed for the layout actions & scrolling) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-    <!-- nav element -->
+    <!-- Scroll Up Button Feature -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
-    <!-- home section elements -->
+    <!-- Home Section -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">THAMIZHMANI</div>
                 <div class="text-3">And I'm a <span>Telecom & Network Professional</span></div>
-                <a href="#about">About Me</a>
+                <a href="#contact">Hire me</a>
             </div>
         </div>
     </section>
 
-    <!-- about section elements (RESTRUCTURED) -->
+    <!-- About Section (Photo Space Removed Completely) -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
-                <!-- The image column div has been completely removed here -->
-                <div class="column right">
+                <div class="column right-full">
                     <div class="text">I'm Thamizhmani and I'm a <span>Network Specialist</span></div>
                     <p>Telecommunications and Network Operations professional with hands-on experience in Optical Line Terminal (OLT) provisioning, network configuration, and fiber access technologies. Skilled in routing verification, VLAN provisioning, switch configuration, and network protection activities across multi-vendor environments. Experienced in working with Juniper and Nokia networking equipment through both CLI and GUI platforms. Passionate about network infrastructure, troubleshooting, and delivering reliable connectivity solutions.</p>
-                    <a href="#skills">My Skills</a>
+                    <a download href="your-cv.pdf">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section elements -->
+    <!-- Technical Skills Section -->
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Technical Skills</h2>
@@ -63,14 +73,14 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-sliders"></i>
                         <div class="text">Operations</div>
                         <p>Service Provisioning, Network Troubleshooting, Router Switching, Network Monitoring, Infrastructure Maintenance</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-terminal"></i>
                         <div class="text">Environments</div>
                         <p>Juniper Equipment, Nokia Hardware, CLI Configuration, GUI Management Interfaces, Multi-vendor Systems</p>
                     </div>
@@ -79,13 +89,14 @@
         </div>
     </section>
 
-    <!-- contact section elements -->
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
+                    <p>Feel free to reach out for network infrastructure projects, operations consulting, or professional opportunities.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -109,20 +120,75 @@
                             </div>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <a download href="your-cv.pdf">Download CV</a>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- footer elements -->
+    <!-- Footer Section -->
     <footer>
-        <span>Created By <a href="#home">Thamizhmani</a> | <span></span> 2026 All rights reserved.</span>
+        <span>Created By <a href="#home">Thamizhmani</a> | <span class="far fa-copyright"></span> 2026 All rights reserved.</span>
     </footer>
 
+    <!-- Custom Navigation Actions script -->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                // sticky navbar script toggle
+                if(this.scrollY > 20){
+                    $('.navbar').addClass("sticky");
+                }else{
+                    $('.navbar').removeClass("sticky");
+                }
+                
+                // scroll-up button script toggle
+                if(this.scrollY > 500){
+                    $('.scroll-up-btn').addClass("show");
+                }else{
+                    $('.scroll-up-btn').removeClass("show");
+                }
+            });
+
+            // slide-up script
+            $('.scroll-up-btn').click(function(){
+                $('html').animate({scrollTop: 0});
+                // removing smooth scroll on slide-up button click
+                $('html').css("scrollBehavior", "auto");
+            });
+
+            $('.navbar .menu li a').click(function(){
+                // applying again smooth scroll on menu items click
+                $('html').css("scrollBehavior", "smooth");
+            });
+
+            // toggle menu/navbar script
+            $('.menu-btn').click(function(){
+                $('.navbar .menu').toggleClass("active");
+                $('.menu-btn i').toggleClass("active");
+            });
+        });
+    </script>
 </body>
 </html>
