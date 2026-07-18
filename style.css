@@ -26,7 +26,7 @@ html {
     background: #555;
 }
 
-/* Reusable Configurations */
+/* Base Sizing Layout */
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -45,7 +45,7 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #007bff; /* Becomes solid color on scroll */
+    background: #007bff;
 }
 
 .navbar .max-width {
@@ -91,7 +91,6 @@ html {
     color: #111;
 }
 
-/* Mobile Nav Toggle Menu Button */
 .navbar .menu-btn {
     color: #fff;
     font-size: 23px;
@@ -99,7 +98,7 @@ html {
     display: none;
 }
 
-/* Home Section Styling */
+/* Home Section Layout */
 .home {
     display: flex;
     background: #111;
@@ -154,7 +153,7 @@ html {
     background: none;
 }
 
-/* All Sections Common Styling */
+/* Section Global Definitions */
 section {
     padding: 100px 0;
 }
@@ -204,7 +203,7 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-/* About Section Full-Width Text Setup */
+/* Centered Full-Width About Block Configuration */
 .about .title::after {
     content: "who i am";
 }
@@ -229,28 +228,32 @@ section .title::after {
 .about .about-content .right-full p {
     text-align: justify;
     line-height: 1.8;
-    margin-bottom: 15px;
 }
 
-.about .about-content .right-full a {
+/* About CV Button Style */
+.about .about-content .right-full .cv-btn {
     display: inline-block;
     background: #007bff;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 6px;
     border: 2px solid #007bff;
     transition: all 0.3s ease;
 }
 
-.about .about-content .right-full a:hover {
+.about .about-content .right-full .cv-btn i {
+    margin-right: 8px;
+}
+
+.about .about-content .right-full .cv-btn:hover {
     color: #007bff;
     background: none;
 }
 
-/* Technical Skills Column Grids */
+/* Technical Skills Card Boxes */
 .skills .title::after {
     content: "what i know";
 }
@@ -289,12 +292,17 @@ section .title::after {
 }
 
 .skills .skills-content .card .text {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-/* Contact Two-Column Split Grid */
+.skills .skills-content .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Contact Grid Configurations */
 .contact .title::after {
     content: "get in touch";
 }
@@ -314,7 +322,7 @@ section .title::after {
 }
 
 .contact .contact-content .left .icons {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .contact .contact-content .left .row {
@@ -340,7 +348,7 @@ section .title::after {
     color: #666;
 }
 
-/* Forms & Textareas */
+/* Contact Form Layout Details */
 .contact .contact-content .right form .fields {
     display: flex;
 }
@@ -384,11 +392,6 @@ section .title::after {
     resize: none;
 }
 
-.contact .contact-content .right form .button-area {
-    display: flex;
-    align-items: center;
-}
-
 .contact .contact-content .right form .button-area button {
     color: #fff;
     display: block;
@@ -409,7 +412,7 @@ section .title::after {
     background: none;
 }
 
-/* Scroll Up Action Button */
+/* Scroll To Top Layout Button */
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -435,7 +438,7 @@ section .title::after {
     pointer-events: auto;
 }
 
-/* Footer Element */
+/* Footer elements styling */
 footer {
     background: #111;
     padding: 15px 23px;
@@ -452,7 +455,7 @@ footer span a:hover {
     text-decoration: underline;
 }
 
-/* Media Queries (Responsive Adaptations) */
+/* Fluid Layout Responsive Viewport Media Queries */
 @media (max-width: 1104px) {
     .skills .skills-content .card {
         width: calc(50% - 10px);
@@ -501,10 +504,6 @@ footer span a:hover {
     }
     .home .home-content .text-3 {
         font-size: 35px;
-    }
-    .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
     }
     .contact .contact-content .column {
         width: 100%;
